@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive navbar</title>
+    <link rel="stylesheet" href="practice.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="RGB(207, 67, 55)"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="Browse">Browse</a></li>
+        <li><a href="resource">resource</a></li>
+        <li><a href="search">search</a></li>
+        <li><a href="sign-in ">sign-in</a></li>
+        <li><a href="sign-up">sign-up</a></li>
+      </ul>
+      <ul>
+        <li class="hideOnMobile">
+          <img
+            src="https://www.unlv.edu/sites/default/files/pg_images/3/CampusConnectLogo.png"
+            alt=""
+          />
+        </li>
+        <li class="hideOnMobile">
+          <a href="Browse">Browse</a>
+          <ul class="dropdown">
+            <li><a href="Upcoming-events">Upcoming-events</a></li>
+            <li><a href="Study-groups">Study-groups</a></li>
+            <li><a href="Project-collaboration">Project-collaboration</a></li>
+            <li><a href="Resources">Resources</a></li>
+            <li><a href="Mentors">Mentors</a></li>
+            <li><a href="Find-work">Find-work</a></li>
+            <li><a href="Discussion-Forms">Discussion-Forms</a></li>
+          </ul>
+        </li>
+        <li class="hideOnMobile"><a href="resource">Resource</a></li>
+        <form class="search" action="#">
+          <input
+            class="search-data"
+            type="search"
+            name="search-data"
+            placeholder="Search for: Study-Groups,Resources,"
+          />
+          <button>Search</button>
+        </form>
+        <!-- <li class="hideOnMobile"><a class="search" href="search">Search for group-studies,local-events,projects </a></li> -->
+        <li class="hideOnMobile"><a href="sign-in ">Sign-In</a></li>
+        <li class="hideOnMobile"><a href="sign-up">Sign-Up</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="RGB(207,"
+              67,
+              55)
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+    <section class="top">
+      <div class="tagLine">
+        <h1>Beyond Textbooks: Learn & Grow with Campus Connect.</h1>
+      </div>
+      <div class="top-right">
+        <div class="loginInfo">
+          <h1>
+            Sharpen Your <u>Skills & Network.</u> Sign Up for Campus Connect!
+          </h1>
+        </div>
+        <div class="logIn">
+          <ul>
+            <li class="loginbutton">
+              <img
+                src="https://th.bing.com/th/id/R.0dd54f853a1bffb0e9979f8146268af3?rik=qTQlRtQRV5AliQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fgoogle-logo-png-google-logo-icon-png-transparent-background-1000.png&ehk=VlcCHZ7jyV%2fCI7dZfbUl8Qb9%2f7uibkF6I6MBoqTtpRU%3d&risl=&pid=ImgRaw&r=0"
+                alt=""
+              />
+              <a style="color: black" href="google"
+                ><b>Continue with Google</b></a
+              >
+            </li>
+            <li class="loginbutton">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png"
+                alt=""
+              />
+              <a style="color: black" href="facebook"
+                ><b>Continue with facebook</b></a
+              >
+            </li>
+            <li class="loginbutton">
+              <img
+                src="https://th.bing.com/th/id/OIP.pW0TOZyl_OZMIuo5HjUsyQHaIf?rs=1&pid=ImgDetMain"
+                alt=""
+              />
+              <a style="color: black" href="apple"
+                ><b>Continue with Apple</b></a
+              >
+            </li>
+            <li class="loginbutton">
+              <img
+                src="https://www.pngmart.com/files/16/Gmail-Logo-PNG-Transparent-Image.png"
+                alt=""
+              />
+              <a style="color: black" href="gmail"
+                ><b>Continue with Gmail</b></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="termsAndConditions">
+          <h3>
+            By signing up you agree to CampusConnect's
+            <u>Terms of Service</u> and <u>Privacy Policy</u> , and agree to
+            receive marketing communications from CampusConnect at the email
+            address provided. This page is protected by reCAPTCHA and is subject
+            to Google's <u>Terms of Service</u> and <u>Privacy Policy</u>.
+          </h3>
+        </div>
+      </div>
+    </section>
+    <section class="logos">
+      <div class="logos-slide">
+        <img
+          src="https://images.ukfast.co.uk/comms/news/businesscloud/hackathon.jpg"
+          alt=""
+        />
+        <img
+          src="https://th.bing.com/th/id/OIP.Ye70ffWZOEFXxtoX52WChAHaHa?w=1080&h=1080&rs=1&pid=ImgDetMain"
+          alt=""
+        />
+        <img
+          src="https://www.theosophy.world/sites/default/files/2018-06/Study%20Reousces.jpg"
+          alt=""
+        />
+        <img
+          src="https://thumbs.dreamstime.com/b/businesswoman-blurred-background-using-hand-drawn-collaboration-presentation-businesswoman-using-hand-drawn-collaboration-106799685.jpg"
+          alt=""
+        />
+        <img
+          src="https://st2.depositphotos.com/7865540/11938/v/450/depositphotos_119381182-stock-illustration-chart-with-keywords-and-icons.jpg"
+          alt=""
+        />
+        <img
+          src="https://mir-s3-cdn-cf.behance.net/projects/max_808/830c6398172117.60c936da6972b.jpg"
+          alt=""
+        />
+        <img
+          src="https://thumbs.dreamstime.com/b/upcoming-events-neon-sign-vector-design-template-light-banner-night-signboard-nightly-bright-advertising-inscription-illustration-253489397.jpg"
+          alt=""
+        />
+        <img
+          src="https://i0.wp.com/hrnxt.com/wp-content/uploads/2020/02/Internships.jpg?fit=1200%2C972&ssl=1"
+          alt=""
+        />
+        <img
+          src="https://static.skillshare.com/assets/images/loh/category_carousel/320x400/graphic_design.webp"
+          alt=""
+        />
+      </div>
+      <div class="logos-slide">
+        <img
+          src="https://images.ukfast.co.uk/comms/news/businesscloud/hackathon.jpg"
+          alt=""
+        />
+        <img
+          src="https://th.bing.com/th/id/OIP.Ye70ffWZOEFXxtoX52WChAHaHa?w=1080&h=1080&rs=1&pid=ImgDetMain"
+          alt=""
+        />
+        <img
+          src="https://www.theosophy.world/sites/default/files/2018-06/Study%20Reousces.jpg"
+          alt=""
+        />
+        <img
+          src="https://thumbs.dreamstime.com/b/businesswoman-blurred-background-using-hand-drawn-collaboration-presentation-businesswoman-using-hand-drawn-collaboration-106799685.jpg"
+          alt=""
+        />
+        <img
+          src="https://st2.depositphotos.com/7865540/11938/v/450/depositphotos_119381182-stock-illustration-chart-with-keywords-and-icons.jpg"
+          alt=""
+        />
+        <img
+          src="https://mir-s3-cdn-cf.behance.net/projects/max_808/830c6398172117.60c936da6972b.jpg"
+          alt=""
+        />
+        <img
+          src="https://thumbs.dreamstime.com/b/upcoming-events-neon-sign-vector-design-template-light-banner-night-signboard-nightly-bright-advertising-inscription-illustration-253489397.jpg"
+          alt=""
+        />
+        <img
+          src="https://i0.wp.com/hrnxt.com/wp-content/uploads/2020/02/Internships.jpg?fit=1200%2C972&ssl=1"
+          alt=""
+        />
+        <img
+          src="https://static.skillshare.com/assets/images/loh/category_carousel/320x400/graphic_design.webp"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="middle-section">
+      <div class="quotes">
+        <div class="left-quote">
+          <h1>Campus Connect: The Learning Hub for Students, by Students</h1>
+        </div>
+        <div class="right-quote">
+          <ul class="quote-list">
+            <li>Share Skills. Find Mentors. Learn Together.</li>
+            <li>Search Nearby. Connect Instantly. Collaborate Seamlessly.</li>
+            <li>Build Your Network. Explore Opportunities. Unlock Potential.</li>
+            <li>Skills. Support. Success. All on Campus Connect.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
