@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(246, 240, 235, 1);
+  font-family: "poppins";
+}
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.navButtons {
+  text-decoration-line: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+}
+.navButtons:hover {
+  background-color: orangered;
+}
+main {
+  padding: 0 24px;
+}
+img {
+  width: 100%;
+}
+.hero-section {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroimg {
+  max-width: 1111px;
+}
+.heroText {
+  text-align: center;
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: 400;
+}
+.second {
+  margin-top: 150px;
+}
+.secondTitle {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+.secondimg {
+  max-width: 1040px;
+  max-height: 680px;
+  margin: 0 auto;
+}
+.third {
+  margin-top: 180px;
+}
+.thirdTitle {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+.thirdimg {
+  max-width: 1040px;
+  max-height: 680px;
+  margin: 0 auto;
+}
+.forth {
+  margin-top: 180px;
+}
+.forthTitle {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+.forthimg {
+  max-width: 1040px;
+  max-height: 680px;
+  margin: 0 auto;
+}
+.fifth {
+  margin-top: 180px;
+}
+.fifthTitle {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+.fifthimg {
+  max-width: 1040px;
+  max-height: 680px;
+  margin: 0 auto;
+}
+.sixth {
+  margin-top: 180px;
+}
+.sixthTitle {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+.sixthimg {
+  max-width: 1040px;
+  max-height: 680px;
+  margin: 0 auto;
+}
+.bottom {
+  margin-top: 90px;
+}
+.goToTop {
+  text-align: right;
+}
+.linkToTop {
+  color: rgba(73, 33, 24, 1);
+  font-size: 32px;
+  font-weight: 700;
+  margin-right: 80px;
+}
+.message {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(133, 133, 133, 1);
+}
+.close-icon{
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  display: none;
+}
+.hamburger-menu{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.hamburger-icon{
+  font-size: 26px;
+}
+@media (max-width: 946px) {
+  .navButtons {
+    font-size: 16px;
+  }
+  nav {
+    gap: 32px;
+    padding: 24px 28px;
+  }
+}
+@media (max-width: 816px) {
+  header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(246, 240, 235, 0.722);
+    backdrop-filter: blur(8px);
+  }
+  .close-icon{
+    display: block;
+  }
+  nav {
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.784);
+    
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    display: none;
+  }
+  .hero-section {
+    margin-top: 60px;
+  }
+  .heroText {
+    font-size: 12px;
+  }
+  .second {
+    margin-top: 65px;
+  }
+  .secondTitle {
+    font-size: 20px;
+  }
+  .third {
+    margin-top: 65px;
+  }
+  .thirdTitle {
+    font-size: 20px;
+  }
+  .forth {
+    margin-top: 65px;
+  }
+  .forthTitle {
+    font-size: 20px;
+  }
+  .fifth {
+    margin-top: 65px;
+  }
+  .fifthTitle {
+    font-size: 20px;
+  }
+  .sixth {
+    margin-top: 65px;
+  }
+  .sixthTitle {
+    font-size: 20px;
+  }
+  .linkToTop {
+    font-size: 18px;
+  }
+  .message {
+    font-size: 12px;
+  }
+}
