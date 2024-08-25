@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ececec;
+}
+.input {
+  visibility: hidden;
+}
+.label {
+  height: 200px;
+  width: 200px;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+  position: absolute;
+  border-radius: 50%;
+  border: 8px solid #ececec;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.label::after {
+    font-family: 'FontAwesome';
+  content: "\f011";
+  color: #7a7a7a;
+  font-size: 70px;
+}
+.input:checked + .label {
+  box-shadow:
+   -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+.input:checked + .label::after{
+    color: #15e38a;
+}

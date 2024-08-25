@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #ececec;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 300px;
+  background-color: #ececec;
+  box-shadow: -7px -7px 15px rgba(255, 255, 255, 0.65),
+    7px 7px 15px rgba(70, 70, 70, 0.12);
+  position: relative;
+}
+.input {
+  visibility: hidden;
+}
+.label {
+  height: 80px;
+  width: 160px;
+  left: 40px;
+  background-color: #ececec;
+  position: absolute;
+  border-radius: 80px;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+  border: 6px solid #ececec;
+  cursor: pointer;
+  outline: none;
+}
+.circle {
+  position: absolute;
+  height: 74px;
+  width: 74px;
+  background-color: #ececec;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  box-shadow: -7px -7px 15px rgba(255, 255, 255, 0.5),
+    7px 7px 15px rgba(70, 70, 70, 0.12);
+  animation: toggleOff 0.5s linear forwards;
+}
+.small-circle {
+  height: 15px;
+  width: 15px;
+  background-color: #7a7a7a;
+  position: absolute;
+  border-radius: 50%;
+  right: 25px;
+}
+.input:checked + .label .circle {
+  animation: toggleOn 0.5s linear forwards;
+}
+.input:checked + .container .small-circle{
+  color: #55f696;
+}
+@keyframes toggleOn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(80px);
+  }
+}
+@keyframes toggleOff {
+  0% {
+    transform: translateX(80px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
