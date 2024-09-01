@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: nunito, sans-serif;
+  background-color: #dcdcdc;
+}
+a {
+  text-decoration-line: none;
+  color: inherit;
+}
+main {
+  padding: 24px;
+}
+.header {
+  background-color: #dcdcdc;
+  box-shadow: 3px 3px 5px rgba(30, 30, 30, 0.12);
+  padding-inline: 24px;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+.title {
+  font-weight: 700;
+  font-size: 30px;
+}
+.toggle-dark {
+  position: relative;
+  padding-inline: 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 150px;
+  gap: 35px;
+}
+.input {
+  visibility: hidden;
+}
+.icon {
+  left: 0;
+  font-size: 25px;
+}
+.label {
+  height: 35px;
+  width: 70px;
+  background-color: #ececec;
+  position: absolute;
+  border-radius: 40px;
+  right: 0px;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(30, 30, 30, 0.12),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 15px rgba(30, 30, 30, 0.12);
+  border: 6px solid #ececec;
+  cursor: pointer;
+  outline: none;
+}
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  background-color: #ececec;
+  box-shadow: -7px -7px 15px rgba(255, 255, 255, 0.5),
+    7px 7px 15px rgba(10, 10, 10, 0.12);
+  animation: toggleOff 0.5s linear forwards;
+}
+.input:checked + .label .circle {
+  animation: toggleOn 0.5s linear forwards;
+}
+.countries-container {
+  max-width: 1100px;
+  margin-inline: auto;
+  margin-top: 12px;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.countries-card {
+  display: inline-block;
+  width: 230px;
+  box-shadow: 3px 3px 5px rgba(30, 30, 30, 0.12);
+  border-radius: 6px;
+  overflow: hidden;
+  padding-bottom: 22px;
+  transition: all 0.2s ease-in-out;
+}
+.card-text {
+  padding: 16px;
+}
+.card-title {
+  font-size: 24px;
+  margin-block: 16px;
+}
+.card-text p {
+  margin-block: 8px;
+}
+.countries-card img {
+  width: 100%;
+}
+.countries-card:hover {
+  transform: scale(1.025);
+  box-shadow: 5px 5px 7px rgba(30, 30, 30, 0.12);
+}
+@keyframes toggleOn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(35px);
+  }
+}
+@keyframes toggleOff {
+  0% {
+    transform: translateX(35px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 600px) {
+  .countries-container {
+    justify-content: center;
+  }
+  .title {
+    font-size: 22px;
+  }
+}

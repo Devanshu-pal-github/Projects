@@ -1,0 +1,50 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+  max-width: 300px;
+  height: 500px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  padding: 1.3rem;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  padding-bottom: 2.5rem;
+}
+.pic {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+h2 {
+  color: hsl(0, 0%, 100%);
+}
+p {
+  color: hsl(215, 51%, 70%);
+  font-family: sans-serif;
+}
+.value {
+  margin-left: 5px;
+  color: hsl(178, 100%, 50%);
+  margin-bottom: 10px;
+}
+.time {
+  color: hsl(215, 51%, 70%);
+  position: fixed;
+  margin-left: 130px;
+}
+.clock {
+  margin-right: 85px;
+}
+img {
+  border-radius: 50%;
+  border: solid hsl(215, 51%, 70%);
+}
+.creation {
+  position: fixed;
+  color: hsl(215, 51%, 70%);
+  margin-left: 50px;
+  margin-top: -30px;
+}

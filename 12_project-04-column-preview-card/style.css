@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: Lexend Deca;
+  /* min-height: 100vh;
+  display: flex;
+  align-items: center; */
+  /* we can use this here in the body , but its not a good practice */
+}
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card h2 {
+  text-transform: uppercase;
+  font-family: Big Shoulders Display;
+  font-size: 2.5rem;
+}
+.card p {
+  opacity: 0.7;
+  line-height: 28px;
+}
+.card {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* or */
+  /* flex-basis: 100%; */
+  /* both do same function */
+}
+
+.card-container {
+  color: white;
+  display: flex;
+  /* apply flex for destop view */
+  /* apply padding for mobile view */
+  /* padding: 1.5rem; */
+  margin: 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  /* margin-inline: auto; */
+  /* used for aligning in centre */
+  max-width: 910px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+.card a {
+  border: 2px solid white;
+  padding: 1em 2em;
+  border-radius: 2em;
+  margin-top: auto;
+  align-self: flex-start;
+  /* or */
+  /* margin-right: auto; */
+}
+.orange-card {
+  background-color: hsl(31, 77%, 52%);
+  /* padding: 3rem; */
+  /* border-top-left-radius: 10px ;
+  border-top-right-radius: 10px ; */
+  /* border-radius: 10px 10px 0 0; */
+}
+.cyan-card {
+  background-color: hsl(184, 100%, 22%);
+  /* padding: 3rem; */
+}
+.dark-cyan-card {
+  background-color: hsl(179, 100%, 13%);
+  /* padding: 3rem; */
+  /* border-bottom-left-radius: 10px ;
+  border-bottom-right-radius: 10px ; */
+  /* border-radius: 0 0 10px 10px; */
+}
+.card img {
+  width: 64px;
+  height: 40px;
+}
+@media (max-width: 850px){
+  .card-container{
+    flex-direction: column;
+    max-width: 400px;
+  }
+  .card{
+    width: unset;
+    width: auto;
+    /* unset resets all the previous settings and auto self detects the best setting for the layout */
+  }
+}
